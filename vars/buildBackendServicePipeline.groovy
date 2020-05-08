@@ -10,7 +10,7 @@ def call(Map config=[:]) {
             skipStagesAfterUnstable()
         }
         environment {
-
+            MY_ENV_VAR = "FOO"
         }
         stages {
             stage("Checkout SCM") {
